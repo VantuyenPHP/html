@@ -1,0 +1,61 @@
+.main > .container > .row {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.main > .container {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.nav {
+	flex-grow: 1;
+	/* padding-left: 40px; */
+	background-color: lightblue;
+}
+
+.nav-list li {
+	padding: 10px 20px;
+}
+
+.nav-list:hover {
+	cursor: pointer;
+}
+
+.nav-list li:not(:last-child) {
+	border-bottom: 1px solid white;
+}
+
+.dropdown-list {
+	position: absolute;
+	margin-left: 200px;
+	margin-top: -34px;
+	min-width: 200px;
+	display: none;
+}
+
+.dropdown-list li {
+	padding: 10px 20px;
+	background-color: lightblue;
+}
+
+.dropdown-list li:not(:last-child) {
+	border-bottom: 1px solid white;
+}
+
+.dropdown:hover .dropdown-list {
+	display: block;
+}
+
+.links-items:hover .nav-items {
+	color: #fff;
+}
+
+.content{
+	flex-grow: 8;
+}
+
+.aside {
+	flex-grow: 1;
+}
